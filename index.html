@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Ticket Booking</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#111;
+      color:white;
+    }
+
+    /* Header */
+    header{
+      background:#e50914;
+      padding:20px;
+      text-align:center;
+      font-size:32px;
+      font-weight:bold;
+      letter-spacing:2px;
+    }
+
+    /* Booking Container */
+    .container{
+      width:400px;
+      background:#222;
+      margin:40px auto;
+      padding:30px;
+      border-radius:15px;
+      box-shadow:0 0 15px rgba(255,0,0,0.5);
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:25px;
+      color:#ff4d4d;
+    }
+
+    label{
+      display:block;
+      margin-top:15px;
+      margin-bottom:5px;
+      font-size:16px;
+    }
+
+    input, select{
+      width:100%;
+      padding:12px;
+      border:none;
+      border-radius:8px;
+      outline:none;
+      font-size:15px;
+    }
+
+    /* Button */
+    .btn{
+      width:100%;
+      padding:12px;
+      background:#e50914;
+      color:white;
+      border:none;
+      border-radius:8px;
+      margin-top:20px;
+      font-size:18px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#ff1f1f;
+      transform:scale(00.4s)
+    }
+
+    /* Footer */
+    footer{
+      text-align:center;
+      padding:15px;
+      background:#000;
+      margin-top:40px;
+      color:#aaa;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    Movie Ticket Booking
+  </header>
+
+  <!-- Booking Form -->
+  <div class="container">
+
+    <h2>Book Your Ticket</h2>
+
+    <form>
+
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter your name">
+
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email">
+
+      <label>Select Movie</label>
+      <select>
+        <option>Choose Movie</option>
+        <option>Avengers</option>
+        <option>KGF</option>
+        <option>Pushpa</option>
+        <option>Interstellar</option>
+      </select>
+
+      <label>Select Date</label>
+      <input type="date">
+
+      <label>Select Time</label>
+      <select>
+        <option>10:00 AM</option>
+        <option>1:00 PM</option>
+        <option>4:00 PM</option>
+        <option>8:00 PM</option>
+      </select>
+
+      <label>Number of Tickets</label>
+      <input type="number" min="1" max="10">
+
+      <button type="submit" class="btn">
+        Book Now
+      </button>
+
+    </form>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Movie Booking System | All Rights Reserved
+  </footer>
+
+</body>
+</html>
